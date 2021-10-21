@@ -2,16 +2,22 @@
 
 <head>
     <title>Form Input Matakuliah</title>
+<style>
+.pesan {color:red;font-style: italic;}
+</style>
 </head>
 
 <body>
+    <div class="pesan">
+    <?php echo validation_errors(); ?>
+    </div>
     <center>
         <form action="<?= base_url('matakuliah/cetak'); ?>" method="post">
             <table>
                 <tr>
                     <th colspan="3">
                         Form Input Data Mata Kuliah
-                    </th>   
+                    </th>
                 </tr>
                 <tr>
                     <td colspan="3">
@@ -22,16 +28,14 @@
                     <th>Kode MTK</th>
                     <th>:</th>
                     <td>
-                        <input Type ="text" name="kode" id="kode" placeholder="
-                        Required">
+                        <input type="text" name="kode" id="kode">
                     </td>
                 </tr>
                 <tr>
                     <th>Nama MTK</th>
-                    <th>:</th>
+                    <td>:</td>
                     <td>
-                        <input type="text" name="nama" id="nama" placeholder="
-                        Required">
+                        <input type="text" name="nama" id="nama">
                     </td>
                 </tr>
                 <tr>
@@ -45,14 +49,14 @@
                             <option value="4">4</option>
                         </select>
                     </td>
-                </tr>  
+                </tr>
                 <tr>
                     <td colspan="3" align="center">
-                        <input type="submit" value="Submit"> 
+                        <input type="submit" value="Submit">
                     </td>
                 </tr>
-            </table>     
-        </form>  
+            </table>
+        </form>
     </center>
 </body>
 

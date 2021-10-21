@@ -9,3 +9,4 @@ class contoh1 extends CI_Controller
         Olahraga yang saya sukai adalah bulutangkis";
     }
 }
+
