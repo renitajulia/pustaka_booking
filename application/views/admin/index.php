@@ -8,8 +8,8 @@
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
-                            <div class="text-md font-weight-bold text-white textuppercase mb-1">Jumlah Anggota</div>
-                            <div class="h1 mb-0 font-weight-bold text-white"><?=$this->ModelUser->getUserWhere(['role_id' => 1])->num_rows();?></div>
+                            <div class="text-md font-weight-bold text-black textuppercase mb-1">Jumlah Anggota</div>
+                            <div class="h1 mb-0 font-weight-bold text-black"><?=$this->ModelUser->getUserWhere(['role_id' => 1])->num_rows();?></div>
                         </div>
                         <div class="col-auto">
                             <a href="<?= base_url('user/anggota'); ?>"><i
@@ -25,8 +25,8 @@ class="fas fa-users fa-3x text-warning"></i></a>
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
-                            <div class="text-md font-weight-bold text-white textuppercase mb-1">Stok Buku Terdaftar</div>
-                            <div class="h1 mb-0 font-weight-bold text-white">
+                            <div class="text-md font-weight-bold text-black textuppercase mb-1">Stok Buku Terdaftar</div>
+                            <div class="h1 mb-0 font-weight-bold text-black">
                                 <?php
                                 $where = ['stok != 0'];
                                 $totalstok = $this->ModelBuku->total('stok', $where);
@@ -48,8 +48,8 @@ class="fas fa-users fa-3x text-warning"></i></a>
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
-                            <div class="text-md font-weight-bold text-white textuppercase mb-1">Buku yang dipinjam</div>
-                            <div class="h1 mb-0 font-weight-bold text-white">
+                            <div class="text-md font-weight-bold text-black textuppercase mb-1">Buku yang dipinjam</div>
+                            <div class="h1 mb-0 font-weight-bold text-black">
                                 <?php
                                 $where = ['dipinjam != 0'];
                                 $totaldipinjam = $this->ModelBuku->total('dipinjam', $where);
@@ -70,8 +70,8 @@ class="fas fa-users fa-3x text-warning"></i></a>
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
-                            <div class="text-md font-weight-bold text-white textuppercase mb-1">Buku yang dibooking</div>
-                            <div class="h1 mb-0 font-weight-bold text-white">
+                            <div class="text-md font-weight-bold text-black textuppercase mb-1">Buku yang dibooking</div>
+                            <div class="h1 mb-0 font-weight-bold text-black">
                                 <?php
                                 $where = ['dibooking !=0'];
                                 $totaldibooking = $this->ModelBuku->total('dibooking', $where);
