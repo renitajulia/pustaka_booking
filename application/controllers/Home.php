@@ -35,6 +35,8 @@ class Home extends CI_Controller
         }
     }
 
+   
+
     public function detailBuku()
     {
 
@@ -57,9 +59,9 @@ class Home extends CI_Controller
             $data['stok'] = $fields->stok;
             $data['id'] = $id;
         }
-        $this->load->view('templates/templates-user/header', $data);
+        $this->load->view('templates/templates_user/header', $data);
         $this->load->view('buku/detail-buku', $data);
-        //$this->load->view('templates/templates-user/modal');
-        $this->load->view('templates/templates-user/footer');
+        //$this->load->view('templates/templates_user/modal');
+        $this->load->view('templates/templates_user/footer');
     }
 }

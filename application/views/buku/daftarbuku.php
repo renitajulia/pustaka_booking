@@ -23,7 +23,7 @@
                                     } else {echo "<a class='btn btn-outline-primary fas fw fa-shopping-cart' href='" . base_url('booking/tambahBooking/' . $buku->id) . "'> Booking</a>";}
                                     ?>
 
-                                    <a class="btn btn-outline-warning fas fw fa-search" href="<?= base_url('home/detail-buku/' . $buku->id); ?>"> Detail</a></p>
+                                    <a class="btn btn-outline-warning fas fw fa-search" href="<?= base_url('home/detailbuku/' . $buku->id); ?>"> Detail</a></p>
                             </div>
                         </div>
                     </div> <?php } ?>
